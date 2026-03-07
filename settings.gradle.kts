@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         maven("https://repo.opencollab.dev/maven-snapshots") {
             mavenContent { snapshotsOnly() }
         }
-
+        maven("https://repo.papermc.io/repository/maven-public/")
         // Paper, Velocity
 //        maven("https://repo.papermc.io/repository/maven-releases") {
 //            mavenContent { releasesOnly() }
@@ -36,11 +36,6 @@ dependencyResolutionManagement {
             name = "minecraft"
             mavenContent { releasesOnly() }
         }
-
-//        maven("https://nexus.bjd-mc.com:8443/repository/maven-public/") {
-//            name = "bjdmc-repo"
-//            isAllowInsecureProtocol = true
-//        }
 
         mavenCentral()
 
